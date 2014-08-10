@@ -1,6 +1,5 @@
-Railssample1::Application.routes.draw do
-  resources :books
-
+PaypalSample::Application.routes.draw do
+  get "paypal/show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -55,5 +54,5 @@ Railssample1::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  match ':controller(/:action(/:id))', via: [ :get, :post, :patch ]
+  match ':controller(/:action(/:id))',via: [ :get, :post, :patch ]
 end

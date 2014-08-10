@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Railssample1::Application.load_tasks
+PaypalSample::Application.load_tasks

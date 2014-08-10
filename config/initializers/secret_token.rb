@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Railssample1::Application.config.secret_key_base = 'f13aeb13267eb46c836b6833e15f4d8b9703b12b48b379b8fccee092ce71142330c85cda3769a886fe276d78ff664e82d6b0d74993dc04925231f9f3deabdcb7'
+PaypalSample::Application.config.secret_key_base = '03d2824b3f0662d91ad1dfc8bca0b7fa19908b934d1ccfdde18ad61fd8e3232619f53a12c54e9a18931a029cb610fa823b3e55998a3b0bb12bbc8df42dfa2743'
