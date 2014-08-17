@@ -1,5 +1,9 @@
 class PaypalController < ApplicationController
-  def view
-  	@msg = "こんにちは、世界！"
-  end
+
+	def register
+	end
+
+ 	def view
+ 		session[:amount] = params[:amount] 
+ 	end
 end

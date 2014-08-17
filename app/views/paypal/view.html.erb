@@ -1,11 +1,11 @@
 <div id="main">
 
 
-<h12>PayPal-test</h2>
+<h2>PayPal-test　確認</h2>
 
 <form action="https://securepayments.sandbox.paypal.com/webapps/HostedSoleSolu tionApp/webflow/sparta/hostedSoleSolutionProcess" method="post">
 <input type="hidden" name="cmd" value="_hosted-payment">
-<p>支払い金額：<input name="subtotal"></p>
+<p>支払い金額：<%= session[:amount] %>$<input type="hidden" name="subtotal" value="<%= session[:amount] %>"></p>
 <input type="hidden" name="business" value="xxxxxxxx">
 <input type="hidden" name="paymentaction" value="sale">
 <input type="hidden" name="return" value="https://yourwebsite.com/receipt_page.html">

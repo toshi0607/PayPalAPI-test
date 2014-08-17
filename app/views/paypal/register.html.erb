@@ -1,0 +1,10 @@
+<div id="main">
+
+
+<h2>PayPal-test</h2>
+
+<%= form_tag({ controller: :paypal, action: :view}, id: :fm) do %>
+	<%= label_tag :amount, '支払い金額：' %>
+	<%= text_field_tag :amount, "",size: 20 %>$<br>
+	<%= submit_tag '確認' %>
+<% end %>
