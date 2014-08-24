@@ -3,12 +3,13 @@
 
 <h2>PayPal-test　確認</h2>
 
-<form action="https://securepayments.sandbox.paypal.com/webapps/HostedSoleSolu tionApp/webflow/sparta/hostedSoleSolutionProcess" method="post">
+<form action="https://securepayments.sandbox.paypal.com/webapps/HostedSoleSolutionApp/webflow/sparta/hostedSoleSolutionProcess" method="post">
 <input type="hidden" name="cmd" value="_hosted-payment">
 <p>支払い金額：<%= session[:amount] %>$<input type="hidden" name="subtotal" value="<%= session[:amount] %>"></p>
 <input type="hidden" name="business" value="xxxxxxxx">
 <input type="hidden" name="paymentaction" value="sale">
-<input type="hidden" name="return" value="https://yourwebsite.com/receipt_page.html">
+<input type="hidden" name="return" value="http://localhost:3000/paypal/return">
+<input type="hidden" name="notify_url" value="http://localhost:3000/paypal/notify">
 <input type="submit" name="METHOD" value="PayPalで支払う">
 </form>
 </div>
